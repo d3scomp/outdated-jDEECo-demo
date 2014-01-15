@@ -2,6 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>cz.cuni.mff.d3s.jdeeco.demo</artifactId>
+	<version>2.0.0</version>
+	<packaging>pom</packaging>
+	<groupId>cz.cuni.mff.d3s.jdeeco</groupId>
 	<properties>
 		<dist>../dist</dist>
 		<cloudJar>cloud.jar</cloudJar>
@@ -22,6 +25,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
 				<executions>
 					<execution>
 						<id>cloud</id>
@@ -194,11 +198,7 @@
 		</pluginManagement>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>cz.cuni.mff.d3s.jdeeco</groupId>
-			<artifactId>cz.cuni.mff.d3s.jdeeco.core</artifactId>
-			<version>2.0.0</version>
-		</dependency>
+
 		<dependency>
 			<groupId>cz.cuni.mff.d3s</groupId>
 			<artifactId>cz.cuni.mff.d3s.jini</artifactId>
